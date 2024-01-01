@@ -1,0 +1,30 @@
+﻿.header-bar {
+    height: calc(var(--sg) * 6);
+    background-color: blue;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: var(--sg);
+    padding-right: var(--sg);
+}
+
+.header-section {
+    display: flex;
+    align-items: center;
+}
+
+.header-button {
+    visibility: collapse;
+}
+
+@media (max-width: 640px) {
+    .header-button {
+        visibility: visible;
+    }
+
+    .navigation-bar {
+        visibility: collapse;
+        height: 0px;
+    }
+}

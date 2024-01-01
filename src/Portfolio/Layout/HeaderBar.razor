@@ -1,0 +1,25 @@
+﻿<div class="header-bar">
+    <div class="header-section">
+        <span>@ApplicationName</span>
+    </div>
+
+    <div class="header-button">
+        <button>Hello</button>
+    </div>
+</div>
+
+<div class="navigation-bar">
+    <NavigationBar>
+        <NavigationBarItem Title="Home" Hyperlink="/" />
+        <NavigationBarItem Title="Articles" Hyperlink="counter" />
+    </NavigationBar>
+</div>
+
+
+@code {
+    /// <summary>
+    /// Gets or sets the header name.
+    /// </summary>
+    [Parameter]
+    public string ApplicationName { get; set; } = string.Empty;
+}
