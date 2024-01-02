@@ -1,6 +1,6 @@
 ﻿.header-bar {
-    background-color: blue;
-    color: white;
+    background-color: var(--header);
+    color: var(--white);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -38,14 +38,13 @@
     .navigation-bar.toggled {
         display: block;
         position: absolute;
-        top: 48px;
-        right: 32px;
-        left: 32px;
-        transition: 0.3s;
+        top: calc(var(--sg) * 6);
+        right: var(--sg_xlg);
+        left: var(--sg_xlg);
+        transition: var(--transition);
     }
 
         .navigation-bar.toggled ::deep .navbar {
-            background-color: lightblue;
             flex: 0 0 50px;
             display: flex;
             height: auto;
@@ -55,13 +54,13 @@
         .navigation-bar.toggled ::deep .active .navbar-item {
             box-sizing: initial;
             border-bottom: none;
-            border-left: var(--sg_sm) solid blue;
+            border-left: var(--sg_sm) solid var(--primary-complementary);
         }
 
         .navigation-bar.toggled ::deep .navbar-item {
             width: auto;
             align-items: start;
-            padding: 16px;
+            padding: var(--sg_lg);
         }
 
         .navigation-bar.toggled ::deep .navbar-title {

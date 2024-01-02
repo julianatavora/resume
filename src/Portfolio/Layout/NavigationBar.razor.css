@@ -1,5 +1,5 @@
-﻿.mp-navbar {
-    background-color: lightblue;
+﻿.navbar {
+    background-color: var(--primary);
     flex: 0 0 50px;
     display: flex;
     height: 50px;
@@ -15,12 +15,12 @@
 }
 
     ::deep .navbar-item:hover {
-        background-color: purple;
+        background-color: var(--primary-hover);
         transition-duration: var(--transition);
     }
 
 ::deep .navbar-title {
-    color: blue;
+    color: var(--white);
     font-size: 12px;
     position: relative;
     top: 16px;
@@ -28,13 +28,5 @@
 
 ::deep .active .navbar-item {
     box-sizing: border-box;
-    border-bottom: var(--sg_sm) solid blue;
-}
-
-::deep .active .navbar-title {
-    color: blue;
-}
-
-::deep .active svg {
-    fill: blue;
+    border-bottom: var(--sg_sm) solid var(--primary-complementary);
 }
