@@ -1,5 +1,4 @@
 ﻿.header-bar {
-    height: calc(var(--sg) * 6);
     background-color: blue;
     color: white;
     display: flex;
@@ -12,6 +11,14 @@
 .header-section {
     display: flex;
     align-items: center;
+    height: calc(var(--sg) * 6);
+}
+
+.navigation-bar.toggled {
+    display: block;
+    transition: 0.3s;
+    visibility: visible;
+    height: 50px;
 }
 
 .header-button {
@@ -23,8 +30,41 @@
         visibility: visible;
     }
 
-    .navigation-bar {
+    .navigation-bar:not(.toggled) {
         visibility: collapse;
         height: 0px;
     }
+
+    .navigation-bar.toggled {
+        display: block;
+        position: absolute;
+        top: 48px;
+        right: 32px;
+        left: 32px;
+        transition: 0.3s;
+    }
+
+        .navigation-bar.toggled ::deep .navbar {
+            background-color: lightblue;
+            flex: 0 0 50px;
+            display: flex;
+            height: auto;
+            flex-direction: column;
+        }
+
+        .navigation-bar.toggled ::deep .active .navbar-item {
+            box-sizing: initial;
+            border-bottom: none;
+            border-left: var(--sg_sm) solid blue;
+        }
+
+        .navigation-bar.toggled ::deep .navbar-item {
+            width: auto;
+            align-items: start;
+            padding: 16px;
+        }
+
+        .navigation-bar.toggled ::deep .navbar-title {
+            top: 0px;
+        }
 }

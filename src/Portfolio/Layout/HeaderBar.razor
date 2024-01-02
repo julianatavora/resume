@@ -4,11 +4,11 @@
     </div>
 
     <div class="header-button">
-        <button>Hello</button>
+        <button @onclick="Toggle">Hello</button>
     </div>
 </div>
 
-<div class="navigation-bar">
+<div class=@($"navigation-bar {ClassName}")>
     <NavigationBar>
         <NavigationBarItem Title="Home" Hyperlink="/" />
         <NavigationBarItem Title="Articles" Hyperlink="counter" />
@@ -17,6 +17,10 @@
 
 
 @code {
+    private bool isToggled { get; set; }
+    private string ClassName => isToggled ? "toggled" : string.Empty;
+    private void Toggle() => isToggled = !isToggled;
+
     /// <summary>
     /// Gets or sets the header name.
     /// </summary>
