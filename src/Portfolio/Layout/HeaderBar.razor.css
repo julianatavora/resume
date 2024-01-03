@@ -5,7 +5,6 @@
     justify-content: space-between;
     align-items: center;
     padding-left: var(--sg);
-    padding-right: var(--sg);
 }
 
 .header-section {
@@ -14,22 +13,31 @@
     height: calc(var(--sg) * 6);
 }
 
+.header-button-section {
+    visibility: collapse;
+}
+
+.header-button {
+    position: relative;
+    z-index: 1000;
+    background-color: var(--header);
+    border: none;
+    cursor: pointer;
+    display: flex;
+    padding: var(--sg);
+}
+
+    .header-button:hover {
+        background-color: var(--primary-hover);
+    }
+
+
 .navigation-bar {
     z-index: 1000;
 }
 
-.navigation-bar.toggled {
-    display: block;
-    transition: 0.3s;
-    visibility: visible;
-    height: 50px;
-}
-
-.header-button {
-    visibility: collapse;
-}
-
 .overlay {
+    position: fixed;
     top: 0;
     left: 0;
     right: 0;
@@ -37,10 +45,7 @@
     margin: 0 !important;
     align-items: center;
     justify-content: center;
-    border-radius: inherit;
     display: flex;
-    position: fixed;
-    transition: .3s cubic-bezier(0.25, 0.8, 0.5, 1),z-index 1ms;
     z-index: 5;
 }
 
@@ -49,9 +54,15 @@
         visibility: visible;
     }
 
-    .navigation-bar:not(.toggled) {
+    .navigation-bar:not(.toggled),
+    .navigation-bar:not(.toggled) ::deep .navbar,
+    .navigation-bar:not(.toggled) ::deep .navbar-item,
+    .navigation-bar:not(.toggled) ::deep .navbar-title {
         visibility: collapse;
         height: 0px;
+        border: none;
+        font-size: 0px;
+        transition-duration: 0ms;
     }
 
     .navigation-bar.toggled {
@@ -60,12 +71,9 @@
         top: calc(var(--sg) * 6);
         right: var(--sg_xlg);
         left: var(--sg_xlg);
-        transition: var(--transition);
     }
 
         .navigation-bar.toggled ::deep .navbar {
-            flex: 0 0 50px;
-            display: flex;
             height: auto;
             flex-direction: column;
         }

@@ -3,8 +3,17 @@
         <span>@ApplicationName</span>
     </div>
 
-    <div class="header-button">
-        <button @onclick=Toggle>@ButtonName</button>
+    <div class="header-button-section">
+        <button class="header-button" @onclick=Toggle>
+            @if (Toggled)
+            {
+                <CloseIcon />
+            }
+            else
+            {
+                <MenuIcon />
+            }
+        </button>
     </div>
 </div>
 

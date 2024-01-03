@@ -16,7 +16,6 @@
 
     ::deep .navbar-item:hover {
         background-color: var(--primary-hover);
-        transition-duration: var(--transition);
     }
 
 ::deep .navbar-title {
