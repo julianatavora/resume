@@ -4,23 +4,29 @@
     </div>
 
     <div class="header-button">
-        <button @onclick="Toggle">Hello</button>
+        <button @onclick=Toggle>@ButtonName</button>
     </div>
 </div>
 
 <div class=@($"navigation-bar {ClassName}")>
-    <NavigationBar @bind-Toggled=isToggled Items="@Items" />
+    <NavigationBar @bind-Toggled=Toggled Items="@Items" />
 </div>
 
+@if (Toggled)
+{
+    <div class="overlay" @onclick=Toggle></div>
+}
 
 @code {
-    private bool isToggled { get; set; }
-    private string ClassName => isToggled ? "toggled" : string.Empty;
-    private void Toggle() => isToggled = !isToggled;
-    private IReadOnlyList<NavigationBarItem> Items = new List<NavigationBarItem>
+    private bool Toggled { get; set; }
+    private string ClassName => Toggled ? "toggled" : string.Empty;
+    private string ButtonName => Toggled ? "Close" : "Open";
+    private void Toggle() => Toggled = !Toggled;
+
+    private List<NavigationBarItem> Items = new()
     {
-        new NavigationBarItem() { Title="Home", Hyperlink="/" },
-        new NavigationBarItem() { Title="Articles", Hyperlink="/counter" },
+        new() { Title="Home", Hyperlink="/" },
+        new() { Title="Articles", Hyperlink="/counter" },
     };
 
     /// <summary>

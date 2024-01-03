@@ -28,6 +28,9 @@
     [Parameter]
     public EventCallback<bool> ToggledChanged { get; set; }
 
+    /// <summary>
+    /// Gets or sets the list of items in the navigation bar.
+    /// </summary>
     [Parameter]
-    public IReadOnlyList<NavigationBarItem> Items { get; set; } = null!;
+    public List<NavigationBarItem> Items { get; set; } = new();
 }
