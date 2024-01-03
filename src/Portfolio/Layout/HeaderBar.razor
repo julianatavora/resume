@@ -9,10 +9,7 @@
 </div>
 
 <div class=@($"navigation-bar {ClassName}")>
-    <NavigationBar>
-        <NavigationBarItem Title="Home" Hyperlink="/" />
-        <NavigationBarItem Title="Articles" Hyperlink="counter" />
-    </NavigationBar>
+    <NavigationBar @bind-Toggled=isToggled Items="@Items" />
 </div>
 
 
@@ -20,6 +17,11 @@
     private bool isToggled { get; set; }
     private string ClassName => isToggled ? "toggled" : string.Empty;
     private void Toggle() => isToggled = !isToggled;
+    private IReadOnlyList<NavigationBarItem> Items = new List<NavigationBarItem>
+    {
+        new NavigationBarItem() { Title="Home", Hyperlink="/" },
+        new NavigationBarItem() { Title="Articles", Hyperlink="/counter" },
+    };
 
     /// <summary>
     /// Gets or sets the header name.

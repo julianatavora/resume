@@ -1,0 +1,11 @@
+﻿.doughnut circle {
+    fill: none;
+    stroke: var(--primary);
+    stroke-width: 28px;
+}
+
+.doughnut-progress {
+    transform: rotate(-90deg);
+    transform-origin: 50% 50%;
+    stroke-dasharray: 317.3;
+}

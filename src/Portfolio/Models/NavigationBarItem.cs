@@ -1,22 +1,22 @@
-﻿<NavLink href=@Hyperlink Match=@Match>
-    <div class="navbar-item">
-        <div class="navbar-title">@Title</div>
-    </div>
-</NavLink>
+﻿using Microsoft.AspNetCore.Components.Routing;
 
-@code {
+namespace Portfolio.Models;
+
+public class NavigationBarItem
+{
     /// <summary>
     /// Gets or sets the title of the navigation bar item.
     /// </summary>
-    [Parameter]
     public string Title { get; set; } = string.Empty;
 
     /// <summary>
     /// Gets or sets the link of the navigation bar item.
     /// </summary>
-    [Parameter]
     public string Hyperlink { get; set; } = string.Empty;
 
-    [Parameter]
+    /// <summary>
+    /// Gets or sets the URl matching behaviour.
+    /// </summary>
     public NavLinkMatch Match { get; set; } = NavLinkMatch.All;
 }
+

@@ -1,8 +1,33 @@
 ﻿<div class="navbar">
-    @ChildContent
+    @foreach (var item in Items)
+    {
+        <NavLink href=@item.Hyperlink Match=@item.Match @onclick=Toggle>
+            <div class="navbar-item">
+                <div class="navbar-title">@item.Title</div>
+            </div>
+        </NavLink>
+    }
 </div>
 
 @code {
+    private async Task Toggle()
+    {
+        Toggled = !Toggled;
+        await ToggledChanged.InvokeAsync(Toggled);
+    }
+
+    /// <summary>
+    /// Gets or sets a value indicating whether the navigation bar is toggled.
+    /// </summary>
     [Parameter]
-    public RenderFragment ChildContent { get; set; } = null!;
+    public bool Toggled { get; set; }
+
+    /// <summary>
+    /// Gets or sets the navigation toggling event handler. 
+    /// </summary>
+    [Parameter]
+    public EventCallback<bool> ToggledChanged { get; set; }
+
+    [Parameter]
+    public IReadOnlyList<NavigationBarItem> Items { get; set; } = null!;
 }

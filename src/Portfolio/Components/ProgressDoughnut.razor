@@ -1,0 +1,17 @@
+﻿<div class="doughnut">
+    <svg xmlns="http://www.w3.org/2000/svg" height="@Size" width="@Size" viewBox="0 0 111 111">
+        <circle cx="55.5" cy="55.5" r="41" opacity="0.1" />
+        @{
+            var dashOffset = 317.3 * (1 - @Percentage / 100);
+        }
+        <circle class="doughnut-progress" cx="55.5" cy="55.5" r="41" stroke-dashoffset="@dashOffset" />
+    </svg>
+</div>
+
+@code {
+    [Parameter, EditorRequired]
+    public int Size { get; set; }
+
+    [Parameter, EditorRequired]
+    public double Percentage { get; set; }
+}
