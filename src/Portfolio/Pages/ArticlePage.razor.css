@@ -1,0 +1,25 @@
+﻿.year-container {
+    font-family: Bitter, sans-serif;
+    font-weight: 600;
+    border-bottom: 1px solid black;
+    padding-bottom: var(--sg);
+    font-size: 18px;
+}
+
+.article-container {
+    padding: var(--sg_lg) 0px;
+}
+
+.link-container {
+    padding-bottom: var(--sg);
+}
+
+.link {
+    color: var(--primary); 
+    font-size: 18px;
+}
+
+span.author {
+    color: var(--primary);
+    font-weight: 600;
+}

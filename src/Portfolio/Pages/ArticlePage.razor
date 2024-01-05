@@ -1,0 +1,46 @@
+﻿@page "/articles"
+@inject HttpClient Http
+
+<PageTitle>Articles</PageTitle>
+
+<div>
+    @foreach (var yeargroup in Articles)
+    {
+        <div class="year-container">@yeargroup.Key</div>
+
+        @foreach (var article in yeargroup)
+        {
+            <div class="article-container">
+                <div class="link-container">
+                    <a href=@($"https://doi.org/{article.DOI}")>
+                        <span class="link">@article.Title</span>
+                    </a>
+                </div>
+                <div>
+                    @foreach (var author in article.Authors)
+                    {
+                        <span class="@(author.Contains("Tavora") ? "author" : string.Empty)">@author</span>
+                        @if (author != article.Authors.Last())
+                        {
+                            <span>, </span>
+                        }
+                    }
+                </div>
+                <div>@article.Journal (@article.Year)</div>
+            </div>
+        }
+    }
+</div>
+
+@code {
+    private IEnumerable<IGrouping<int, Article>> Articles = Array.Empty<IGrouping<int, Article>>();
+
+    protected override async Task OnInitializedAsync()
+    {
+        var data = await Http.GetFromJsonAsync<IEnumerable<Article>>("data/articles.json");
+        if (data is not null)
+        {
+            Articles = data.OrderByDescending(x => x.Year).GroupBy(x => x.Year);
+        }
+    }
+}
