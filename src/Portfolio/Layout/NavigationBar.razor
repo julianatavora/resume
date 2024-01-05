@@ -12,8 +12,7 @@
 @code {
     private async Task Toggle()
     {
-        Toggled = !Toggled;
-        await ToggledChanged.InvokeAsync(Toggled);
+        await ToggledChanged.InvokeAsync(false);
     }
 
     /// <summary>
