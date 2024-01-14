@@ -1,8 +1,9 @@
 ﻿.navbar {
-    background-color: var(--primary);
+    background-color: var(--background);
     flex: 0 0 50px;
     display: flex;
     height: 50px;
+    grid-gap: 16px;
 }
 
 ::deep .navbar-item {
@@ -11,21 +12,20 @@
     flex-direction: column;
     align-items: center;
     height: 100%;
-    width: 50px;
 }
 
-    ::deep .navbar-item:hover {
-        background-color: var(--primary-hover);
+    ::deep .navbar-item:hover .navbar-title {
+        color: var(--primary-hover);
     }
 
 ::deep .navbar-title {
-    color: var(--white);
-    font-size: 12px;
+    color: var(--primary);
+    font-size: 16px;
     position: relative;
-    top: 16px;
+    top: 14px;
 }
 
 ::deep .active .navbar-item {
     box-sizing: border-box;
-    border-bottom: var(--sg_sm) solid var(--primary-complementary);
+    border-bottom: var(--sg_sm) solid var(--primary-hover);
 }

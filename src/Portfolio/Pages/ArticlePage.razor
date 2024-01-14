@@ -3,7 +3,7 @@
 
 <PageTitle>Articles</PageTitle>
 
-<div>
+<div class="page-container">
     @foreach (var yeargroup in Articles)
     {
         <div class="year-container">@yeargroup.Key</div>
@@ -12,11 +12,12 @@
         {
             <div class="article-container">
                 <div class="link-container">
+                    <div class="symbol"></div>
                     <a href=@($"https://doi.org/{article.DOI}")>
                         <span class="link">@article.Title</span>
                     </a>
                 </div>
-                <div>
+                <div class="subtext"> 
                     @foreach (var author in article.Authors)
                     {
                         <span class="@(author.Contains("Tavora") ? "author" : string.Empty)">@author</span>
@@ -26,7 +27,7 @@
                         }
                     }
                 </div>
-                <div>@article.Journal (@article.Year)</div>
+                <div class="subtext">@article.Journal (@article.Year)</div>
             </div>
         }
     }

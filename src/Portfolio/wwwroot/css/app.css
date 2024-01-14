@@ -1,21 +1,24 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Work+Sans&display=swap');
+
+
 :root {
     /* Colours */
-    --white: #FFFFFF;
-    --background: #FBFFFE;
+    --background: #F3F3F3;
     --onbackground: #252525;
     --primary: #005461;
-    --primary-hover: #14616D;
-    --primary-complementary: #79A6AF;
+    --primary-hover: #79A6AF;
     --outline: #333333;
     --grey-default: #CECECE;
     --grey-darker: #6C6C6C;
-    --header: #001F25;
+    --secondary: #E6DACE;
     /* Soft Grid Base Unit*/
     --sg-unit: 8px;
     --sg_sm: calc(var(--sg-unit) * 0.5);
     --sg: var(--sg-unit);
     --sg_lg: calc(var(--sg-unit) * 2);
     --sg_xlg: calc(var(--sg-unit) * 4);
+    --header-height: 80px;
     /* Border radius */
     --border-radius: 2px;
     /* Transition */
@@ -51,6 +54,7 @@ h3 {
 
 a {
     text-decoration: none;
+    color: var(--primary);
 }
 
 p {
@@ -60,52 +64,6 @@ p {
 hr {
     margin: var(--sg_lg) 0;
 }
-
-.row-container {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    padding: var(--sg_lg);
-    grid-gap: var(--sg);
-}
-
-    .row-container.centered {
-        justify-content: center;
-        align-items: center;
-    }
-
-    .row-container.align-left {
-        justify-content: center;
-        align-items: start;
-    }
-
-    .row-container.align-right {
-        justify-content: center;
-        align-items: end;
-    }
-
-.column-container {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    padding: var(--sg_lg);
-    grid-gap: var(--sg);
-}
-
-    .column-container.centered {
-        justify-content: center;
-        align-items: center;
-    }
-
-    .column-container.align-left {
-        justify-content: start;
-        align-items: center;
-    }
-
-    .column-container.align-right {
-        justify-content: end;
-        align-items: center;
-    }
 
 #app {
     display: flex;
@@ -161,37 +119,4 @@ article {
 
     .blazor-error-boundary::after {
         content: "An error has occurred."
-    }
-
-.loading-progress {
-    position: relative;
-    display: block;
-    width: 8rem;
-    height: 8rem;
-    margin: 20vh auto 1rem auto;
-}
-
-    .loading-progress circle {
-        fill: none;
-        stroke: #e0e0e0;
-        stroke-width: 0.6rem;
-        transform-origin: 50% 50%;
-        transform: rotate(-90deg);
-    }
-
-        .loading-progress circle:last-child {
-            stroke: #1b6ec2;
-            stroke-dasharray: calc(3.141 * var(--blazor-load-percentage, 0%) * 0.8), 500%;
-            transition: stroke-dasharray 0.05s ease-in-out;
-        }
-
-.loading-progress-text {
-    position: absolute;
-    text-align: center;
-    font-weight: bold;
-    inset: calc(20vh + 3.25rem) 0 auto 0.2rem;
-}
-
-    .loading-progress-text:after {
-        content: var(--blazor-load-percentage-text, "Loading");
     }

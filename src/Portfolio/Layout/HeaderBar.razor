@@ -1,24 +1,23 @@
 ﻿<div class="header-bar">
-    <div class="header-section">
-        <span>@ApplicationName</span>
+    <NavLink class="home-link" href="">
+        <div class="symbol" />
+        <span class="name">Juliana Tavora</span>
+    </NavLink>
+
+    <div style="display:flex;">
+        <div class=@($"navigation-bar {ClassName}")>
+            <NavigationBar @bind-Toggled=Toggled Items="@Items" />
+        </div>
+
+        <div class="header-button-section">
+            <button class=@($"header-button {ClassName}") @onclick=Toggle>
+                <div class="menu-line line-1"></div>
+                <div class="menu-line line-2"></div>
+                <div class="menu-line line-3"></div>
+            </button>
+        </div>
     </div>
 
-    <div class="header-button-section">
-        <button class="header-button" @onclick=Toggle>
-            @if (Toggled)
-            {
-                <CloseIcon />
-            }
-            else
-            {
-                <MenuIcon />
-            }
-        </button>
-    </div>
-</div>
-
-<div class=@($"navigation-bar {ClassName}")>
-    <NavigationBar @bind-Toggled=Toggled Items="@Items" />
 </div>
 
 @if (Toggled)
@@ -34,13 +33,8 @@
 
     private List<NavigationBarItem> Items = new()
     {
-        new() { Title="Home", Hyperlink="" },
-        new() { Title="Articles", Hyperlink="articles" },
+        new() { Title = "ABOUT ME", Hyperlink = "" },
+        new() { Title = "RESUME", Hyperlink = "resume" },
+        new() { Title = "ARTICLES", Hyperlink = "articles" },
     };
-
-    /// <summary>
-    /// Gets or sets the header name.
-    /// </summary>
-    [Parameter]
-    public string ApplicationName { get; set; } = string.Empty;
 }
