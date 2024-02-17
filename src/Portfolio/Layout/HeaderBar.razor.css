@@ -26,6 +26,10 @@
         background-color: var(--primary);
     }
 
+    .header-bar .job-title {
+        margin-left: 24px;
+    }
+
 .header-button-section {
     visibility: collapse;
     width: 0px;

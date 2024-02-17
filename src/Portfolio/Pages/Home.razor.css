@@ -1,11 +1,21 @@
 ﻿.home-page {
     height: 100%;
-    background: linear-gradient(90deg, var(--secondary) 0%, var(--secondary) 33%, var(--background) 33%);
+    display: grid;
+    grid-template-columns: 33% auto;
+}
+
+.personal-info {
+    display: flex;
+    flex-direction: column;
+    gap: var(--sg_xlg);
+    align-items: center;
+    background-color: var(--secondary);
+    padding-top: 92px;
 }
 
 .picture-container {
-    height: 200px;
-    width: 200px;
+    height: 240px;
+    width: 240px;
     border-radius: 100%;
     -webkit-mask-image: url("data:image/svg+xml,%3Csvg preserveAspectRatio='none' data-bbox='20 20 160 160' viewBox='20 20 160 160' height='200' width='200' xmlns='http://www.w3.org/2000/svg' data-type='shape'%3E%3Cg%3E%3Cpath d='M180 100c0 44.183-35.817 80-80 80s-80-35.817-80-80 35.817-80 80-80 80 35.817 80 80z'/%3E%3C/g%3E%3C/svg%3E%0A");
     mask-image: url("data:image/svg+xml,%3Csvg preserveAspectRatio='none' data-bbox='20 20 160 160' viewBox='20 20 160 160' height='200' width='200' xmlns='http://www.w3.org/2000/svg' data-type='shape'%3E%3Cg%3E%3Cpath d='M180 100c0 44.183-35.817 80-80 80s-80-35.817-80-80 35.817-80 80-80 80 35.817 80 80z'/%3E%3C/g%3E%3C/svg%3E%0A");
@@ -13,4 +23,92 @@
     mask-repeat: no-repeat;
     mask-position: 0;
     mask-size: 100% 100%;
+}
+
+.contact {
+    display: flex;
+    gap: var(--sg_lg);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.name {
+    font-family: 'Poppins', sans-serif;
+    color: var(--primary);
+    font-size: 28px;
+    font-weight: bolder;
+}
+
+.social-links {
+    display: flex;
+    gap: var(--sg);
+    justify-content: center;
+}
+
+    .social-links a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+        .social-links a:hover ::deep svg {
+            fill: var(--primary-hover);
+        }
+
+.contact-button {
+    display: flex;
+    gap: var(--sg);
+    align-items: center;
+    justify-content: center;
+    border: none;
+    background-color: var(--primary);
+    color: white;
+    cursor: pointer;
+    border-radius: 20px;
+    padding: var(--sg) var(--sg_lg);
+    font-size: 16px;
+}
+
+    .contact-button:hover {
+        background-color: var(--primary-hover);
+    }
+
+.personal-interest {
+    padding: 64px;
+}
+
+.hello {
+    font-size: 80px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.description {
+    margin-top: var(--sg_lg);
+}
+
+.interests {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 64px;
+    flex-wrap: wrap;
+}
+
+.interest {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: var(--sg_lg);
+    padding: var(--sg);
+}
+
+@media (max-width: 900px) {
+    .home-page {
+        grid-template-columns: auto;
+    }
+
+    .personal-info {
+        padding: var(--sg_lg);
+    }
 }
