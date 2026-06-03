@@ -1,13 +1,45 @@
 [
   {
+    "title": "Multiple wavelength algOrithm for eStimates of light Absorption, backscatterIng, and suspended sediment Concentration (preprint)",
+    "year": "2025",
+    "authors": [
+      "Tavora J.",
+      "de Liz Arcari A.",
+      "Salama S.",
+      "Fichot C.",
+      "Harringmeyer J. P.",
+      "Braga F.",
+      "Boss E.",
+      "Doxaran D.",
+      "Verney R."
+    ],
+    "journal": "Preprint",
+    "doi": "10.2139/ssrn.6138756"
+  },
+  {
+    "title": "Quantifying the Relative Contributions of Forcings to the Variability of Estuarine Surface Suspended Sediments Using a Machine Learning Framework",
+    "year": "2025",
+    "authors": [
+      "Tavora J.",
+      "El Hourany R.",
+      "Fernandes E. H.",
+      "Jalon-Rojas I.",
+      "Sotollichio A.",
+      "Salama Mhd. S.",
+      "van der Wal D."
+    ],
+    "journal": "Continental Shelf Research",
+    "doi": "10.1016/j.csr.2025.105429"
+  },
+  {
     "title": "Detecting turbid coastal plumes from satellite remote sensing: state-of-art thresholds and the novel PLUMES algorithm",
     "year": "2023",
     "authors": [
       "Tavora J.",
-      "Gonçalves, G. A.",
-      "Fernandes, E. H.",
-      "Salama, Mhd. S.",
-      "van der Wal, D."
+      "Gonçalves G. A.",
+      "Fernandes E. H.",
+      "Salama Mhd. S.",
+      "van der Wal D."
     ],
     "journal": "Frontiers in Marine Science",
     "doi": "10.3389/fmars.2023.1215327"
@@ -17,16 +49,16 @@
     "year": "2023",
     "authors": [
       "Tavora J.",
-      "Jiang, B.",
-      "Kiffney, T.",
-      "Bourdin, G.",
-      "Gray, P. C.",
-      "Sander de Carvalho, L.",
-      "Hesketh, G.",
-      "Schild, K. M.",
-      "Faria de Souza, L.",
-      "Brady, D. C.",
-      "Boss, E."
+      "Jiang B.",
+      "Kiffney T.",
+      "Bourdin G.",
+      "Gray P. C.",
+      "Sander de Carvalho L.",
+      "Hesketh G.",
+      "Schild K. M.",
+      "Faria de Souza L.",
+      "Brady D. C.",
+      "Boss E."
     ],
     "journal": "Journal of Remote Sensing/AAAS",
     "doi": "10.34133/remotesensing.0049"
@@ -35,11 +67,11 @@
     "title": "Detecting the Effects of Extreme Events on Estuarine Suspended Particulate Matter Using Satellite Remote Sensing (Scheldt Estuary): Challenges and Opportunities",
     "year": "2023",
     "authors": [
-      "Tavora, J.",
-      "Salama, M. S.",
-      "Penning de Vries, M.",
-      "Mannaerts, C. M.",
-      "van der Wal, D."
+      "Tavora J.",
+      "Salama M. S.",
+      "Penning de Vries M.",
+      "Mannaerts C. M.",
+      "van der Wal D."
     ],
     "journal": "Remote Sensing, 15, 670",
     "doi": "10.3390/rs15030670"
@@ -48,21 +80,21 @@
     "title": "Patos Lagoon, Brazil, Suspended Particulate Matter (SPM) data compendium",
     "year": "2022",
     "authors": [
-      "Tavora, J.",
-      "Fernandes, E. H.",
-      "Möller Jr, O.O."
+      "Tavora J.",
+      "Fernandes E. H.",
+      "Möller Jr O. O."
     ],
-    "journal": "Geoscience Data Journal, 9, 235– 255",
+    "journal": "Geoscience Data Journal, 9, 235–255",
     "doi": "10.1002/gdj3.134"
   },
   {
     "title": "El-Niño Southern Oscillation (ENSO) effects on the variability of Patos Lagoon Suspended Particulate Matter",
     "year": "2020",
     "authors": [
-      "Tavora, J.",
-      "Fernandes, E. H. L.",
-      "Bitencourt, L. P.",
-      "Orozco, P. M. S."
+      "Tavora J.",
+      "Fernandes E. H. L.",
+      "Bitencourt L. P.",
+      "Orozco P. M. S."
     ],
     "journal": "Regional Studies in Marine Science",
     "doi": "10.1016/j.rsma.2020.101495"
@@ -71,10 +103,10 @@
     "title": "An Algorithm to Estimate Suspended Particulate Matter Concentrations and Associated Uncertainties from Remote Sensing Reflectance in Coastal Environments",
     "year": "2020",
     "authors": [
-      "Tavora, J.",
-      "Boss, E. S.",
-      "Doxaran, D.",
-      "Hill, P."
+      "Tavora J.",
+      "Boss E. S.",
+      "Doxaran D.",
+      "Hill P."
     ],
     "journal": "Remote Sensing",
     "doi": "10.3390/rs12132172"
@@ -83,11 +115,11 @@
     "title": "The influence of river discharge and wind on Patos Lagoon, Brazil, Suspended Particulate Matter",
     "year": "2018",
     "authors": [
-      "Tavora, J.",
-      "Fernandes, E. H. L.",
-      "Thomas, A. C",
-      "Weatherbee, R.",
-      "Schetinni, C. A. F."
+      "Tavora J.",
+      "Fernandes E. H. L.",
+      "Thomas A. C.",
+      "Weatherbee R.",
+      "Schetinni C. A. F."
     ],
     "journal": "International Journal of Remote Sensing, p. 4506-4525",
     "doi": "10.1080/01431161.2019.1569279"
@@ -96,35 +128,124 @@
     "title": "Exploring the Project Potential of Marine Current Turbines: A Case Study in the Southern Brazilian Shelf Region",
     "year": "2014",
     "authors": [
-      "Tavora, J.",
-      "Kirinus, E. P.",
-      "Marques, W. C.",
-      "Gandra, T. B. R.",
-      "Barros, G. P.",
-      "Matzenauer, H. B."
+      "Tavora J.",
+      "Kirinus E. P.",
+      "Marques W. C.",
+      "Gandra T. B. R.",
+      "Barros G. P.",
+      "Matzenauer H. B."
     ],
-    "journal": "International. Journal of Geosciences, v. 05, p. 1547-1560",
+    "journal": "International Journal of Geosciences, v. 05, p. 1547-1560",
     "doi": "10.4236/ijg.2014.513126"
+  },
+  {
+    "title": "Stable Sediment Plumes Despite Tidewater Glacier Retreat in a South Greenland Fjord (preprint)",
+    "year": "2025",
+    "authors": [
+      "Baratta S. J. N.",
+      "Schild K. M.",
+      "Karp-Boss L.",
+      "Boss E.",
+      "Jiang B.",
+      "Tavora J."
+    ],
+    "journal": "Preprint",
+    "doi": "10.22541/essoar.176442801.12612681/v1"
+  },
+  {
+    "title": "The Euclidean Distance Score (EDS): A Unified Metric for Evaluating Aquatic Remote Sensing Retrieval Algorithms (preprint)",
+    "year": "2025",
+    "authors": [
+      "de Liz Arcari A.",
+      "Tavora J.",
+      "van der Wal D.",
+      "Salama Mhd. S."
+    ],
+    "journal": "Preprint",
+    "doi": "10.5194/egusphere-2025-4343"
+  },
+  {
+    "title": "Earth Observation Records of Extreme Sediment Mobilization in the World's Largest Choked Lagoon During the 2024 Southern Brazil Flood Catastrophe",
+    "year": "2026",
+    "authors": [
+      "Cardenas S. M. M.",
+      "Tavora J.",
+      "Rosa M. L. C.",
+      "Wilson H. L.",
+      "Fernandes E. H. L.",
+      "Weschenfelder J."
+    ],
+    "journal": "Estuaries and Coasts",
+    "doi": "10.1007/s12237-026-01701-w"
+  },
+  {
+    "title": "Unprecedent suspended solids load caused by record-breaking extremes in southern Brazil: the May 2024 event",
+    "year": "2025",
+    "authors": [
+      "Simão R.",
+      "Tavora J.",
+      "Salama Mhd. S.",
+      "Weschenfelder J.",
+      "Molano S.",
+      "Gonçalves G. M.",
+      "Collares G.",
+      "Cavalcanti A.",
+      "Mendes C. R.",
+      "Barros D.",
+      "Pereira E.",
+      "Galetti J.",
+      "Moller O.",
+      "Jamet C.",
+      "Fernandes E. H."
+    ],
+    "journal": "Frontiers in Marine Science",
+    "doi": "10.3389/fmars.2025.1726787"
+  },
+  {
+    "title": "The May 2024 Flood Disaster in Southern Brazil: Causes, Impacts, and SWOT-Based Volume Estimation",
+    "year": "2025",
+    "authors": [
+      "Simoes-Sousa I. T.",
+      "Camargo C. M. L.",
+      "Tavora J.",
+      "Piffer-Braga A.",
+      "Farrar T. J.",
+      "Pavelsky T. M."
+    ],
+    "journal": "Geophysical Research Letters",
+    "doi": "10.1029/2024GL112442"
+  },
+  {
+    "title": "Optimizing Optical Coastal Remote-Sensing Products: Recommendations for Regional Algorithm Calibration",
+    "year": "2024",
+    "authors": [
+      "Simao R. A.",
+      "Tavora J.",
+      "Fernandes E. H.",
+      "Salama Mhd. S."
+    ],
+    "journal": "Remote Sensing",
+    "doi": "10.3390/rs16091497"
   },
   {
     "title": "The Wastewater Contamination Index: A methodology to assess the risk of wastewater contamination from satellite-derived water quality indicators",
     "year": "2023",
     "authors": [
-      "de Liz Arcari, A.",
-      "Tavora, J.",
-      "van der Wal, D.",
-      "Salama, Mhd. S."
+      "de Liz Arcari A.",
+      "Tavora J.",
+      "van der Wal D.",
+      "Salama Mhd. S."
     ],
     "journal": "Frontiers in Environmental Science",
     "doi": "10.3389/fenvs.2023.1130655"
   },
   {
-    "title": "Long-Term Variability on Suspended Particulate Matter Loads from the Tributaries of the World’s Largest Choked Lagoon",
+    "title": "Long-Term Variability on Suspended Particulate Matter Loads from the Tributaries of the World's Largest Choked Lagoon",
     "year": "2022",
     "authors": [
-      "Bortolin, E. C.",
-      "Tavora, J.",
-      "Fernandes, E. H."
+      "Bortolin E. C.",
+      "Tavora J.",
+      "Fernandes E. H."
     ],
     "journal": "Frontiers in Marine Science",
     "doi": "10.3389/fmars.2022.836739"
@@ -133,14 +254,14 @@
     "title": "Sporotrichosis in Southern Brazil, towards an epidemic?",
     "year": "2018",
     "authors": [
-      "Poester, V. R.",
-      "Mattei, A. S.",
-      "Madrid, I. M.",
-      "Tavora, J.",
-      "Klafke, G. B.",
-      "Sanchonete, K. O.",
-      "Brandolt, T. M.",
-      "Xavier, M. O."
+      "Poester V. R.",
+      "Mattei A. S.",
+      "Madrid I. M.",
+      "Tavora J.",
+      "Klafke G. B.",
+      "Sanchonete K. O.",
+      "Brandolt T. M.",
+      "Xavier M. O."
     ],
     "journal": "Zoonoses and Public Health",
     "doi": "10.1111/zph.12504"
@@ -149,12 +270,12 @@
     "title": "Exploring the Impact of Sub-Sea Technology Development on The Southern Brazilian Shelf",
     "year": "2014",
     "authors": [
-      "Kirinus, E. P.",
-      "Tavora, J.",
-      "Marques, W. C.",
-      "Matzenauer, H. B.",
-      "Poester, V. R.",
-      "Gandra, T. B. R."
+      "Kirinus E. P.",
+      "Tavora J.",
+      "Marques W. C.",
+      "Matzenauer H. B.",
+      "Poester V. R.",
+      "Gandra T. B. R."
     ],
     "journal": "Symposium on Automation and Computation for Naval, Offshore and Subsea Technology (NAVCOMP), Rio Grande, Brazil",
     "doi": "10.1109/NAVCOMP.2014.11"
