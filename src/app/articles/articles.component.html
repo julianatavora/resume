@@ -1,0 +1,22 @@
+<div class="page-container">
+    @for (group of groupedYearArticles(); track group.year) {
+        <div class="year-container">{{ group.year }}</div>
+
+        @for (article of group.articles; track article.doi) {
+            <div class="article-container">
+                <div class="link-container">
+                    <div class="symbol"></div>
+                    <a href="https://doi.org/{{ article.doi }}" target="_blank" rel="noopener">
+                        <span class="link">{{ article.title }}</span>
+                    </a>
+                </div>
+                <div class="subtext">
+                    @for (author of article.authors; track author; let last = $last) {
+                        <span [class.author]="author.includes('Tavora')">{{ author }}</span>@if (!last) {<span>, </span>}
+                    }
+                </div>
+                <div class="subtext journal">{{ article.journal }} ({{ article.year }})</div>
+            </div>
+        }
+    }
+</div>

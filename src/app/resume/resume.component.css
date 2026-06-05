@@ -1,0 +1,80 @@
+.section-container {
+    margin-bottom: calc(var(--sg-unit) * 6);
+}
+
+.section-container h3 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    color: var(--primary);
+    font-size: 20px;
+    margin: 0 0 var(--sg_lg) 0;
+    padding-bottom: var(--sg);
+    border-bottom: 1px solid black;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+}
+
+.education-item, .grant-item {
+    padding: var(--sg_lg) 0;
+    border-bottom: 1px solid var(--primary-hover);
+}
+
+.education-item:last-child, .grant-item:last-child {
+    border-bottom: none;
+}
+
+.resume-item {
+    padding: var(--sg) 0;
+}
+
+.resume-title {
+    font-size: 16px;
+    color: var(--onbackground);
+    display: flex;
+    align-items: baseline;
+    gap: var(--sg);
+    flex-wrap: wrap;
+}
+
+.resume-subtitle {
+    margin-top: var(--sg_sm);
+    font-size: 14px;
+}
+
+.subtext {
+    font-size: 14px;
+    margin-top: var(--sg_sm);
+    line-height: 1.5;
+}
+
+.resume-row {
+    display: flex;
+    gap: var(--sg_lg);
+    align-items: flex-start;
+    line-height: 1.5;
+}
+
+.resume-year {
+    color: var(--primary);
+    font-size: 14px;
+    font-weight: 600;
+    min-width: 110px;
+    flex-shrink: 0;
+}
+
+.resume-year-inline {
+    color: var(--grey-darker);
+    font-size: 13px;
+    font-weight: 400;
+}
+
+@media (max-width: 640px) {
+    .resume-row {
+        flex-direction: column;
+        gap: var(--sg_sm);
+    }
+
+    .resume-year {
+        min-width: unset;
+    }
+}

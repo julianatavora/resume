@@ -1,0 +1,39 @@
+<div class="header-bar">
+    <div>
+        <a routerLink="/home" (click)="CloseOverlay()">
+            <div class="header-bar__home">
+                <div class="header-bar__home-symbol"></div>
+                <span class="header-bar__home-name">Juliana Tavora</span>
+            </div>
+            <div>Coastal Physical Oceanographer</div>
+        </a>
+    </div>
+
+    <div class="grow-full-width"></div>
+
+    <div class="header-bar__navigation">
+        <div class="navigation-bar" [class.toggled]="toggled">
+            <div class="navigation-bar__itemlist">
+                @for (item of items; track item.hyperlink) {
+                    <a routerLink="{{ item.hyperlink }}" routerLinkActive="active" (click)="CloseOverlay()">
+                        <div class="navigation-bar__item">
+                            <div class="navigation-bar__item-title">{{ item.title }}</div>
+                        </div>
+                    </a>
+                }
+            </div>
+        </div>
+
+        <div class="button-section" [class.toggled]="toggled">
+            <button class="toggle-button" (click)="ToggleOverlay()">
+                <div class="button-line line-1"></div>
+                <div class="button-line line-2"></div>
+                <div class="button-line line-3"></div>
+            </button>
+        </div>
+    </div>
+</div>
+
+@if (toggled) {
+    <div class="overlay" (click)="CloseOverlay()"></div>
+}
