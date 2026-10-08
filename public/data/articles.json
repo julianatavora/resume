@@ -1,7 +1,7 @@
 [
   {
-    "title": "Multiple wavelength algOrithm for eStimates of light Absorption, backscatterIng, and suspended sediment Concentration (preprint)",
-    "year": "2025",
+    "title": "An algorithm for the retrieval of particle backscattering, size, and suspended particulate matter in turbid coastal and estuarine waters (MOSAIC)",
+    "year": "2026",
     "authors": [
       "Tavora J.",
       "de Liz Arcari A.",
@@ -13,8 +13,8 @@
       "Doxaran D.",
       "Verney R."
     ],
-    "journal": "Preprint",
-    "doi": "10.2139/ssrn.6138756"
+    "journal":"Remote Sensing of Environment",
+    "doi": "10.1016/j.rse.2026.115629"
   },
   {
     "title": "Quantifying the Relative Contributions of Forcings to the Variability of Estuarine Surface Suspended Sediments Using a Machine Learning Framework",
